@@ -142,9 +142,15 @@ document.querySelector('.icon-tests').addEventListener('click', function() {
 });
 
 // REDIRECIONAR PARA NOVO TESTE
-document.querySelector('.newTest').addEventListener('click', function() {
-    window.location.href = 'frontend/frontend%202/fazer_teste.html';
-});
+const newTestElement = document.querySelector('.newTest');
+if (newTestElement) {
+    newTestElement.addEventListener('click', function () {
+        console.log('Redirecionando para ./frontend2/fazer_teste.html');
+        window.location.href = '../frontend2/fazer_teste.html';
+    });
+} else {
+    console.error('Elemento .newTest não encontrado no DOM.');
+}
 // REDIRECIONAR PARA NOVA QUESTÃO
 document.querySelector('.newQuestion').addEventListener('click', function() {
 

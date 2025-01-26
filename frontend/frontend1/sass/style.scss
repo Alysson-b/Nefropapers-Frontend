@@ -441,7 +441,6 @@ $animation: transitionScreen 0.6s ease-in-out;
     text-decoration: none;
     border-bottom: 1px solid $black-color;
     cursor: pointer;
-    margin-top: 1.5rem 0;
 }
 .mostarSenha{
     font-size: 20px;
@@ -4128,14 +4127,12 @@ $shadow-color: rgba(0, 0, 0, 0.1);
     display: none;
     position: fixed; 
     bottom: -2%;
-    left: 50%;
-    right: 50%;
+    left: 45%;
     height: 40px; 
     width: 15%; 
     margin: 20px auto; 
     box-shadow: 0 2px 10px rgb(255, 255, 255, 0.4); 
     border-radius: 12px; 
-    transform: translate(-50%, 50%);
 }
 
 .navigation ul {
